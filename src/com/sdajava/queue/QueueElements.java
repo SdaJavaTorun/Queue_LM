@@ -55,4 +55,18 @@ public class QueueElements {
             }
         }
     }
+    public void size(){
+
+        int licznik=0;
+
+        if(first !=null){
+            QueueImpl element =first;
+
+            while (element != null){
+                element = element.getNext();
+                        licznik++;
+            }
+        }
+        System.out.println("Ilość elementów w kolejce: " + licznik);
+    }
 }
